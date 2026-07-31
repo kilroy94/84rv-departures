@@ -1,0 +1,173 @@
+@media (orientation: portrait) and (max-width: 70rem) {
+  .board-header {
+    align-items: flex-start;
+  }
+
+  .time-panel {
+    grid-template-columns: 1fr;
+    justify-items: end;
+    row-gap: 0.25rem;
+  }
+
+  .clock,
+  .date,
+  .timezone {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .board-toolbar {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .board-meta .demo-label {
+    display: none;
+  }
+}
+
+@media (max-width: 54rem) {
+  body {
+    padding: 0;
+  }
+
+  .sign-shell {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 0.65rem;
+    border-inline: 0;
+    border-radius: 0;
+  }
+
+  .board-header {
+    gap: 0.8rem;
+    min-height: 5.2rem;
+    padding-inline: 0.45rem;
+  }
+
+  .brand-mark {
+    width: 4.5rem;
+  }
+
+  .title-group .eyebrow,
+  .timezone {
+    display: none;
+  }
+
+  .time-panel {
+    gap: 0.3rem;
+  }
+
+  .date {
+    font-size: 0.64rem;
+  }
+
+  .board-toolbar {
+    grid-template-columns: 1fr auto;
+    gap: 0.55rem;
+    padding-inline: 0.45rem;
+  }
+
+  .board-meta {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: space-between;
+    order: 3;
+  }
+
+  .demo-label {
+    display: none;
+  }
+
+  .panel-heading {
+    min-height: 3.7rem;
+  }
+
+  table {
+    min-width: 54rem;
+  }
+
+  .table-viewport {
+    min-height: calc(var(--row-height) * 6 + 2.7rem);
+  }
+
+  th {
+    height: 2.7rem;
+  }
+
+  .board-message {
+    inset-block-start: 2.7rem;
+  }
+}
+
+@media (max-width: 32rem) {
+  .board-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.45rem;
+  }
+
+  .brand-lockup {
+    gap: 0.45rem;
+  }
+
+  .brand-mark {
+    width: 2.8rem;
+  }
+
+  h1 {
+    font-size: clamp(0.84rem, 4vw, 1.05rem);
+    white-space: normal;
+  }
+
+  .clock {
+    font-size: clamp(1rem, 5.3vw, 1.35rem);
+  }
+
+  .time-panel {
+    justify-self: start;
+    justify-items: start;
+  }
+
+  .date {
+    display: none;
+  }
+
+  .board-meta {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+  }
+
+  .mode-switch span {
+    padding-inline: 0.55rem;
+  }
+
+  .text-button {
+    display: none;
+  }
+
+  .record-count {
+    max-width: 45%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 100rem) and (min-height: 55rem) {
+  :root {
+    --row-height: clamp(4.8rem, 7.4vh, 6.7rem);
+  }
+
+  .sign-shell {
+    padding: 1.6rem;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .text-button,
+  .icon-button,
+  .page-button,
+  .mode-switch span {
+    min-height: 3rem;
+  }
+}

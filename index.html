@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#111310">
+    <meta name="description" content="A fictional, read-only RV departure-board demonstration.">
+    <title>84RV Departures</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/icons/app-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/board.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script type="module" src="scripts/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#departures-table">Skip to departures</a>
+
+    <main class="sign-shell" aria-labelledby="board-title">
+      <header class="board-header">
+        <div class="brand-lockup">
+          <img class="brand-mark" src="assets/logo-placeholder.svg" alt="84RV demonstration logo" width="148" height="70">
+          <div class="title-group">
+            <p class="eyebrow">Rental operations · read only</p>
+            <h1 id="board-title">84RV <span>Departures</span></h1>
+          </div>
+        </div>
+
+        <div class="time-panel" aria-label="Current local date and time">
+          <p class="date" id="current-date">—</p>
+          <time class="clock" id="current-time" datetime="">--:--:--</time>
+          <p class="timezone">Local time</p>
+        </div>
+      </header>
+
+      <section class="board-toolbar" aria-label="Board controls">
+        <fieldset class="mode-switch" aria-label="Departure display mode">
+          <legend class="visually-hidden">Departure display mode</legend>
+          <label>
+            <input type="radio" name="board-mode" value="today" checked>
+            <span>Today</span>
+          </label>
+          <label>
+            <input type="radio" name="board-mode" value="upcoming">
+            <span>Upcoming</span>
+          </label>
+        </fieldset>
+
+        <div class="board-meta" aria-label="Data status">
+          <span class="connection-badge" id="connection-status" data-state="online">
+            <span class="connection-dot" aria-hidden="true"></span>
+            <span id="connection-label">Online</span>
+          </span>
+          <span>Refreshed <time id="last-refresh" datetime="">—</time></span>
+          <span class="demo-label" id="demo-label">Fictional demo data</span>
+        </div>
+
+        <div class="utility-controls">
+          <button class="text-button" id="refresh-button" type="button">Refresh</button>
+          <button class="icon-button" id="fullscreen-button" type="button" aria-label="Enter full screen" title="Enter full screen">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="departures-panel" aria-labelledby="departures-heading" aria-busy="true">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Scheduled movements</p>
+            <h2 id="departures-heading">Today's departures</h2>
+          </div>
+          <p class="record-count" id="record-count">Loading schedule…</p>
+        </div>
+
+        <div class="table-viewport" tabindex="0" aria-label="Departures table; scroll horizontally on small screens">
+          <table id="departures-table">
+            <caption class="visually-hidden">Fictional RV departure schedule</caption>
+            <thead>
+              <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Guest</th>
+                <th scope="col">Unit</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Type</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="departures-body"></tbody>
+          </table>
+          <div class="board-message" id="board-message" role="status" aria-live="polite">
+            <span class="message-symbol" aria-hidden="true">◌</span>
+            <strong>Loading schedule</strong>
+            <span>Please stand by.</span>
+          </div>
+        </div>
+
+        <footer class="pagination-bar" aria-label="Departure pages">
+          <button class="page-button" id="previous-page" type="button" aria-label="Show previous page">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <p id="page-indicator" aria-live="polite">Page 1 of 1</p>
+          <button class="page-button" id="next-page" type="button" aria-label="Show next page">
+            <span aria-hidden="true">›</span>
+          </button>
+        </footer>
+      </section>
+
+      <p class="board-footnote">Demonstration only · No real customer or reservation information</p>
+    </main>
+
+    <noscript>
+      <p class="noscript-message">JavaScript is required to display the fictional departure schedule.</p>
+    </noscript>
+  </body>
+</html>
+

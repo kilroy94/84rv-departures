@@ -1,0 +1,204 @@
+{
+  "_comment": "All names, unit numbers, destinations, schedules, and operational details in this file are fictional demonstration data. Do not add real customer or reservation information.",
+  "departures": [
+    {
+      "id": "demo-009",
+      "departureDate": "2026-07-31",
+      "departureTime": "13:45",
+      "customerLastName": "Monroe",
+      "unitNumber": "A1874",
+      "destination": "Savannah, GA",
+      "departureType": "Pickup",
+      "status": "Pending",
+      "warning": "Final orientation pending"
+    },
+    {
+      "id": "demo-014",
+      "departureDate": "2026-08-01",
+      "departureTime": "10:30",
+      "customerLastName": "Bennett",
+      "unitNumber": "C3108",
+      "destination": "Cape May, NJ",
+      "departureType": "Delivery",
+      "status": "Ready",
+      "warning": ""
+    },
+    {
+      "id": "demo-003",
+      "departureDate": "2026-07-31",
+      "departureTime": "08:15",
+      "customerLastName": "Bishop",
+      "unitNumber": "B2086",
+      "destination": "Gettysburg, PA",
+      "departureType": "Delivery",
+      "status": "Ready",
+      "warning": ""
+    },
+    {
+      "id": "demo-011",
+      "departureDate": "2026-07-31",
+      "departureTime": "15:30",
+      "customerLastName": "Franklin",
+      "unitNumber": "C2604",
+      "destination": "Shenandoah, VA",
+      "departureType": "Pickup",
+      "status": "Attention",
+      "warning": "Paperwork review requested"
+    },
+    {
+      "id": "demo-001",
+      "departureDate": "2026-07-31",
+      "departureTime": "07:30",
+      "customerLastName": "Anderson",
+      "unitNumber": "C2451",
+      "destination": "Myrtle Beach, SC",
+      "departureType": "Pickup",
+      "status": "Ready",
+      "warning": ""
+    },
+    {
+      "id": "demo-018",
+      "departureDate": "2026-08-03",
+      "departureTime": "12:15",
+      "customerLastName": "Hollis",
+      "unitNumber": "A2201",
+      "destination": "Asheville, NC",
+      "departureType": "Pickup",
+      "status": "Pending",
+      "warning": ""
+    },
+    {
+      "id": "demo-006",
+      "departureDate": "2026-07-31",
+      "departureTime": "10:00",
+      "customerLastName": "Caldwell",
+      "unitNumber": "C1882",
+      "destination": "Virginia Beach, VA",
+      "departureType": "Pickup",
+      "status": "Ready",
+      "warning": ""
+    },
+    {
+      "id": "demo-013",
+      "departureDate": "2026-08-01",
+      "departureTime": "08:00",
+      "customerLastName": "Sawyer",
+      "unitNumber": "B1470",
+      "destination": "Lancaster, PA",
+      "departureType": "Pickup",
+      "status": "Pending",
+      "warning": ""
+    },
+    {
+      "id": "demo-008",
+      "departureDate": "2026-07-31",
+      "departureTime": "12:30",
+      "customerLastName": "Ellis",
+      "unitNumber": "C2972",
+      "destination": "Ocean City, MD",
+      "departureType": "Delivery",
+      "status": "Attention",
+      "warning": "Delivery window confirmation needed"
+    },
+    {
+      "id": "demo-016",
+      "departureDate": "2026-08-02",
+      "departureTime": "11:00",
+      "customerLastName": "Quinn",
+      "unitNumber": "C2048",
+      "destination": "Williamsburg, VA",
+      "departureType": "Delivery",
+      "status": "Pending",
+      "warning": ""
+    },
+    {
+      "id": "demo-004",
+      "departureDate": "2026-07-31",
+      "departureTime": "09:00",
+      "customerLastName": "Diaz",
+      "unitNumber": "C3215",
+      "destination": "Outer Banks, NC",
+      "departureType": "Pickup",
+      "status": "Delayed",
+      "warning": "Unit preparation is running behind schedule"
+    },
+    {
+      "id": "demo-017",
+      "departureDate": "2026-08-02",
+      "departureTime": "14:45",
+      "customerLastName": "Reed",
+      "unitNumber": "B2890",
+      "destination": "Pocono Mountains, PA",
+      "departureType": "Pickup",
+      "status": "Ready",
+      "warning": ""
+    },
+    {
+      "id": "demo-007",
+      "departureDate": "2026-07-31",
+      "departureTime": "11:15",
+      "customerLastName": "Graham",
+      "unitNumber": "B2550",
+      "destination": "Hershey, PA",
+      "departureType": "Pickup",
+      "status": "Pending",
+      "warning": ""
+    },
+    {
+      "id": "demo-002",
+      "departureDate": "2026-07-31",
+      "departureTime": "08:15",
+      "customerLastName": "Abbott",
+      "unitNumber": "A1933",
+      "destination": "Deep Creek, MD",
+      "departureType": "Pickup",
+      "status": "Ready",
+      "warning": ""
+    },
+    {
+      "id": "demo-015",
+      "departureDate": "2026-08-01",
+      "departureTime": "15:15",
+      "customerLastName": "Patel",
+      "unitNumber": "C2761",
+      "destination": "Charlottesville, VA",
+      "departureType": "Pickup",
+      "status": "Attention",
+      "warning": "Accessory check requested"
+    },
+    {
+      "id": "demo-010",
+      "departureDate": "2026-07-31",
+      "departureTime": "14:30",
+      "customerLastName": "Keller",
+      "unitNumber": "B1742",
+      "destination": "Rehoboth Beach, DE",
+      "departureType": "Delivery",
+      "status": "Ready",
+      "warning": ""
+    },
+    {
+      "id": "demo-005",
+      "departureDate": "2026-07-31",
+      "departureTime": "09:40",
+      "customerLastName": "Foster",
+      "unitNumber": "A2288",
+      "destination": "Luray, VA",
+      "departureType": "Delivery",
+      "status": "Pending",
+      "warning": "Driver assignment pending"
+    },
+    {
+      "id": "demo-012",
+      "departureDate": "2026-07-31",
+      "departureTime": "16:20",
+      "customerLastName": "Nolan",
+      "unitNumber": "A2057",
+      "destination": "Chincoteague, VA",
+      "departureType": "Pickup",
+      "status": "Delayed",
+      "warning": "Estimated departure is 20 minutes late"
+    }
+  ]
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "84RV Departures Demo",
+  "short_name": "Departures",
+  "description": "A fictional read-only RV departure-board proof of concept.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090a09",
+  "theme_color": "#111310",
+  "icons": [
+    {
+      "src": "assets/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/app-icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
+

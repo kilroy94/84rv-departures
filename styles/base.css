@@ -1,0 +1,113 @@
+:root {
+  color-scheme: dark;
+  --color-canvas: #090a09;
+  --color-housing: #111310;
+  --color-panel: #171a16;
+  --color-panel-raised: #1d211c;
+  --color-line: #393d35;
+  --color-line-strong: #53594d;
+  --color-text: #f2f0dc;
+  --color-muted: #a9ad9e;
+  --color-dim: #777c70;
+  --color-accent: #e7b354;
+  --color-focus: #8dd7ff;
+  --font-board: "Roboto Mono", "IBM Plex Mono", "Courier New", ui-monospace, monospace;
+  --font-interface: Inter, Roboto, "Segoe UI", Arial, sans-serif;
+  --radius-shell: 0.6rem;
+  --row-height: clamp(3.65rem, 7.1vh, 5.4rem);
+  --board-transition-duration: 280ms;
+  --safe-inline: max(1rem, env(safe-area-inset-left));
+  font-family: var(--font-interface);
+  background: var(--color-canvas);
+  color: var(--color-text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 20rem;
+  min-height: 100%;
+  background: var(--color-canvas);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: clamp(0.5rem, 1.8vw, 1.5rem);
+  background:
+    radial-gradient(circle at 50% -20%, rgba(231, 179, 84, 0.09), transparent 42%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.012) 0 1px, transparent 1px 5px),
+    var(--color-canvas);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  inset: 0 auto auto 1rem;
+  padding: 0.7rem 1rem;
+  color: #071015;
+  background: var(--color-focus);
+  transform: translateY(-130%);
+  transition: transform 120ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0.5rem);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.noscript-message {
+  position: fixed;
+  inset: auto 1rem 1rem;
+  z-index: 10;
+  padding: 1rem;
+  color: #1a1204;
+  background: #ffd98b;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
