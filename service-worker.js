@@ -1,4 +1,4 @@
-const CACHE_NAME = "84rv-departures-v1";
+const CACHE_NAME = "84rv-departures-v2";
 const ESSENTIAL_PATHS = [
   "./",
   "index.html",
@@ -11,7 +11,7 @@ const ESSENTIAL_PATHS = [
   "scripts/pagination.js",
   "scripts/data-source.js",
   "data/departures.json",
-  "assets/logo-placeholder.svg",
+  "assets/logo.webp",
   "assets/icons/app-icon.svg",
   "assets/icons/app-icon-maskable.svg",
   "manifest.json",

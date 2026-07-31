@@ -3,13 +3,13 @@ import { startClock, toLocalDateKey } from "./clock.js";
 import { DepartureDataError, getDepartures } from "./data-source.js";
 import { createPagination } from "./pagination.js";
 
-// Demonstration behavior is configured here. CSS reads ANIMATION_DURATION_MS
+// Board behavior is configured here. CSS reads ANIMATION_DURATION_MS
 // through --board-transition-duration, set during startup.
 export const BOARD_CONFIG = Object.freeze({
   ROWS_PER_PAGE: 6,
   ROTATION_INTERVAL_MS: 12_000,
   ANIMATION_DURATION_MS: 280,
-  SHIFT_EXPIRED_DEMO_DATA: true,
+  SHIFT_EXPIRED_SAMPLE_DATA: true,
 });
 
 const elements = {
@@ -66,7 +66,7 @@ function renderPage({ records, currentPage, totalPages, totalRecords }) {
       title: isToday ? "No departures today" : "No upcoming departures",
       detail: isToday
         ? "Switch to Upcoming to view the next scheduled departures."
-        : "There are no future departures in the demonstration schedule.",
+        : "There are no future departures in the schedule.",
       symbol: "—",
     });
     return;
@@ -104,7 +104,7 @@ async function loadDepartures() {
 
   try {
     allRecords = await getDepartures({
-      shiftExpiredDemoData: BOARD_CONFIG.SHIFT_EXPIRED_DEMO_DATA,
+      shiftExpiredSampleData: BOARD_CONFIG.SHIFT_EXPIRED_SAMPLE_DATA,
     });
     setLastRefresh(new Date());
     updateMode();
@@ -119,7 +119,7 @@ async function loadDepartures() {
       title: navigator.onLine ? "Schedule unavailable" : "Offline — schedule unavailable",
       detail: navigator.onLine
         ? "Check the data file, then use Refresh to try again."
-        : "Connect once to cache the demonstration, then try again.",
+        : "Connect once to cache the board, then try again.",
       symbol: "!",
     });
     if (!(error instanceof DepartureDataError)) {
@@ -203,4 +203,3 @@ async function startApplication() {
 }
 
 startApplication();
-

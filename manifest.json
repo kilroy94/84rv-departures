@@ -1,7 +1,7 @@
 {
-  "name": "84RV Departures Demo",
+  "name": "84RV Departures",
   "short_name": "Departures",
-  "description": "A fictional read-only RV departure-board proof of concept.",
+  "description": "84RV rental departure board.",
   "id": "./",
   "start_url": "./",
   "scope": "./",
@@ -24,4 +24,3 @@
     }
   ]
 }
-

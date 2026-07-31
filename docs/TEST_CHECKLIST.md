@@ -88,7 +88,7 @@ Run the site from `http://localhost` or HTTPS. Record the browser/device/version
 ## Offline and service worker
 
 - [ ] Complete one successful online load from HTTPS or localhost, then reload once online.
-- [ ] Confirm `service-worker.js` is activated and the `84rv-departures-v1` cache contains every essential path.
+- [ ] Confirm `service-worker.js` is activated and the current versioned cache contains every essential path.
 - [ ] Enable browser offline mode or disconnect the tablet and reload.
 - [ ] Confirm the complete board and fictional data load from cache and the visible indicator says Offline.
 - [ ] Clear site storage, remain offline, and confirm first-time offline startup shows a useful unavailable state (or the browser's own navigation failure when no shell has ever been cached).
@@ -109,4 +109,3 @@ Run the site from `http://localhost` or HTTPS. Record the browser/device/version
 - [ ] Confirm CSS, ES modules, JSON, SVGs, and the manifest all return HTTP 200 under that subpath.
 - [ ] Confirm the service-worker scope is the repository subpath and not the entire domain.
 - [ ] Confirm an offline reload from a nested GitHub Pages project URL returns cached `index.html`.
-

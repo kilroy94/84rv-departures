@@ -18,7 +18,7 @@ The visual direction is a premium departure sign inspired by traditional mechani
 
 The header contains:
 
-- A fictional business logo placeholder.
+- The 84RV Rentals and Service logo.
 - The board title, `84RV DEPARTURES`.
 - The current local date.
 - A live local clock.
@@ -56,4 +56,3 @@ The design does not attempt a character-by-character simulation unless a later u
 ## Readability and accessibility priorities
 
 High contrast, meaningful text, visible keyboard focus, semantic table markup, labeled icon buttons, and status text are mandatory. Visual density, decoration, and animation must yield to these priorities.
-

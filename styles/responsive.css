@@ -20,9 +20,6 @@
     grid-template-columns: auto 1fr auto;
   }
 
-  .board-meta .demo-label {
-    display: none;
-  }
 }
 
 @media (max-width: 54rem) {
@@ -45,7 +42,7 @@
   }
 
   .brand-mark {
-    width: 4.5rem;
+    width: 8rem;
   }
 
   .title-group .eyebrow,
@@ -72,10 +69,6 @@
     grid-row: 2;
     justify-content: space-between;
     order: 3;
-  }
-
-  .demo-label {
-    display: none;
   }
 
   .panel-heading {
@@ -111,7 +104,7 @@
   }
 
   .brand-mark {
-    width: 2.8rem;
+    width: 5.5rem;
   }
 
   h1 {

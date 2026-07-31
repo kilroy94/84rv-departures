@@ -106,7 +106,7 @@ export function sortDepartures(records) {
   });
 }
 
-function shiftExpiredDemoSchedule(records, today) {
+function shiftExpiredSampleSchedule(records, today) {
   if (records.length === 0) return records;
 
   const localToday = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
@@ -124,7 +124,7 @@ function shiftExpiredDemoSchedule(records, today) {
 }
 
 export async function getDepartures(options = {}) {
-  const { shiftExpiredDemoData = true, today = new Date() } = options;
+  const { shiftExpiredSampleData = true, today = new Date() } = options;
   let response;
 
   try {
@@ -161,13 +161,13 @@ export async function getDepartures(options = {}) {
     try {
       records.push(validateAndNormalize(rawRecord, index, seenIds));
     } catch (error) {
-      console.warn("Skipping an invalid fictional departure record.", error);
+      console.warn("Skipping an invalid departure record.", error);
     }
   });
 
   const sortedRecords = sortDepartures(records);
-  const finalRecords = shiftExpiredDemoData
-    ? shiftExpiredDemoSchedule(sortedRecords, today)
+  const finalRecords = shiftExpiredSampleData
+    ? shiftExpiredSampleSchedule(sortedRecords, today)
     : sortedRecords;
 
   return Object.freeze(sortDepartures(finalRecords));

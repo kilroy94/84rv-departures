@@ -18,7 +18,7 @@
 ├── data/
 │   └── departures.json
 ├── assets/
-│   ├── logo-placeholder.svg
+│   ├── logo.webp
 │   └── icons/
 ├── docs/
 ├── manifest.json
@@ -26,7 +26,7 @@
 └── README.md
 ```
 
-The empty `assets/icons/` placeholder may be replaced by locally generated PWA icons if the final manifest requires them. The exact final tree will be recorded in the README.
+The local logo and PWA icons are cached with the application shell. The exact final tree is recorded in the README.
 
 ## Module responsibilities
 
@@ -82,4 +82,3 @@ Production integration replaces the implementation behind `getDepartures()` in `
 ## Why no framework
 
 The board has one screen, a small fixed record model, and limited state. Browser-native modules, DOM APIs, CSS Grid/table layout, the Fullscreen API, and Service Workers already provide the needed behavior. A framework would add download weight, version management, a build pipeline, and offline assets without solving a complexity present in this POC.
-

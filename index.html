@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#111310">
-    <meta name="description" content="A fictional, read-only RV departure-board demonstration.">
+    <meta name="description" content="84RV rental departure board.">
     <title>84RV Departures</title>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="assets/icons/app-icon.svg" type="image/svg+xml">
@@ -19,9 +19,9 @@
     <main class="sign-shell" aria-labelledby="board-title">
       <header class="board-header">
         <div class="brand-lockup">
-          <img class="brand-mark" src="assets/logo-placeholder.svg" alt="84RV demonstration logo" width="148" height="70">
+          <img class="brand-mark" src="assets/logo.webp" alt="84RV Rentals and Service" width="500" height="218">
           <div class="title-group">
-            <p class="eyebrow">Rental operations · read only</p>
+            <p class="eyebrow">Rental operations</p>
             <h1 id="board-title">84RV <span>Departures</span></h1>
           </div>
         </div>
@@ -52,7 +52,6 @@
             <span id="connection-label">Online</span>
           </span>
           <span>Refreshed <time id="last-refresh" datetime="">—</time></span>
-          <span class="demo-label" id="demo-label">Fictional demo data</span>
         </div>
 
         <div class="utility-controls">
@@ -76,7 +75,7 @@
 
         <div class="table-viewport" tabindex="0" aria-label="Departures table; scroll horizontally on small screens">
           <table id="departures-table">
-            <caption class="visually-hidden">Fictional RV departure schedule</caption>
+            <caption class="visually-hidden">RV departure schedule</caption>
             <thead>
               <tr>
                 <th scope="col">Time</th>
@@ -107,12 +106,10 @@
         </footer>
       </section>
 
-      <p class="board-footnote">Demonstration only · No real customer or reservation information</p>
     </main>
 
     <noscript>
-      <p class="noscript-message">JavaScript is required to display the fictional departure schedule.</p>
+      <p class="noscript-message">JavaScript is required to display the departure schedule.</p>
     </noscript>
   </body>
 </html>
-

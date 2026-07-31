@@ -32,7 +32,7 @@
 }
 
 .brand-mark {
-  width: clamp(5.6rem, 10vw, 9.25rem);
+  width: clamp(8.5rem, 17vw, 15.625rem);
   height: auto;
   flex: 0 0 auto;
 }
@@ -480,17 +480,6 @@ tbody tr:nth-child(6) { animation-delay: 125ms; }
   line-height: 1;
 }
 
-.board-footnote {
-  margin: 0;
-  padding: 0.7rem 0.6rem 0;
-  color: var(--color-dim);
-  font-family: var(--font-board);
-  font-size: clamp(0.58rem, 0.7vw, 0.7rem);
-  letter-spacing: 0.08em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 :fullscreen .sign-shell {
   width: 100%;
   min-height: 100vh;
@@ -503,8 +492,6 @@ tbody tr:nth-child(6) { animation-delay: 125ms; }
   padding: 0;
 }
 
-:fullscreen .demo-label,
 :fullscreen #refresh-button {
   display: none;
 }
-
